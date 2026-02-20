@@ -1,0 +1,136 @@
+/* Responsive Styles */
+
+/* Tablet breakpoint - 768px */
+@media (min-width: 768px) {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 1.8rem; }
+
+    /* Header Navigation */
+    .main-nav .nav-list {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .main-nav .nav-list li {
+        margin: 0 var(--spacing-sm);
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger on tablet and desktop */
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    .hero-content .tagline {
+        font-size: 1.5rem;
+    }
+    .hero-actions .btn {
+        font-size: 1.1rem;
+        padding: var(--spacing-sm) var(--spacing-xl);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Testimonials Grid */
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About Page */
+    .content-grid {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    .about-text {
+        order: 1; /* Text first */
+    }
+    .about-image {
+        order: 2; /* Image second */
+    }
+
+    .mission-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Services Page */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: 1fr 1.5fr; /* Info on left, form on right */
+        gap: var(--spacing-xl);
+        text-align: left;
+    }
+    .contact-info p {
+        justify-content: flex-start; /* Align info to left */
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+    }
+    .footer-brand, .footer-links, .footer-contact {
+        padding: 0 var(--spacing-sm); /* Add some padding if needed */
+    }
+    .footer-brand .tagline-footer {
+        text-align: left;
+    }
+    .footer-contact p {
+        justify-content: flex-start;
+    }
+}
+
+/* Desktop breakpoint - 1024px */
+@media (min-width: 1024px) {
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 2.8rem; }
+    h3 { font-size: 2rem; }
+
+    .main-nav .nav-list li {
+        margin: 0 var(--spacing-lg);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Testimonials Grid */
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* About Page */
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Services Page */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Map */
+    .map-container iframe {
+        height: 500px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1.5fr 1fr 1fr; /* Brand wider */
+    }
+}
